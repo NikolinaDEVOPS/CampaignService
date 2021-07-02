@@ -11,4 +11,5 @@ import com.devops.campaign.service.model.Campaign;
 public interface CampaignRepository extends JpaRepository<Campaign, Integer> {
 
 	Campaign findByCampaignId(Integer id);
+	List<Campaign> findByUsername(String username);
 }
